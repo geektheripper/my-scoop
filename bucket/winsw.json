@@ -1,0 +1,12 @@
+{
+  "homepage": "https://github.com/kohsuke/winsw",
+  "version": "2.2.0",
+  "license": "GPL-3.0",
+  "description": "Windows service wrapper in less restrictive license.",
+  "url": "https://github.com/kohsuke/winsw/releases/download/winsw-v2.2.0/WinSW.NET4.exe#/winsw.exe",
+  "bin": "winsw.exe",
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/kohsuke/winsw/releases/download/winsw-v$version/WinSW.NET4.exe#/winsw.exe"
+  }
+}
