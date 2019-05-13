@@ -23,17 +23,17 @@ function link_winsw {
 switch ($action) {
     "up" {
         link_winsw link;
-        .\winsw.exe install;
-        .\winsw.exe start;
+        sudo .\winsw.exe install;
+        sudo .\winsw.exe start;
         Break
     }
     "stop" {
-        .\winsw.exe stop;
+        sudo .\winsw.exe stop;
         Break
     }
     "down" {
-        .\winsw.exe stop;
-        .\winsw.exe uninstall;
+        sudo .\winsw.exe stop;
+        sudo .\winsw.exe uninstall;
         link_winsw unlink;
         Break
     }

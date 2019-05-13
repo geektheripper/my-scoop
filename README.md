@@ -5,7 +5,7 @@ my windows packages registry for [scoop.sh](scoop.sh)
 # Usage
 
 ```powershell
-scoop bucket add extras https://github.com/geektheripper/my-scoop.git
+scoop bucket add my-scoop https://github.com/geektheripper/my-scoop.git
 ```
 
 # Components
