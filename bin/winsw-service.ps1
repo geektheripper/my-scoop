@@ -1,3 +1,10 @@
+#Requires -RunAsAdministrator
+
+if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+    Write-Error "This script must be executed as Administrator.";
+    exit 1;
+}
+
 param (
     [string]$action
 )
@@ -7,7 +14,7 @@ function link_winsw {
     switch ($action) {
         "link" {
             if (!(Test-Path winsw.exe -PathType Leaf)) {
-                sudo New-Item -Path winsw.exe -ItemType SymbolicLink -Value C:\ProgramData\scoop\apps\winsw\current\winsw.exe;
+                New-Item -Path winsw.exe -ItemType SymbolicLink -Value C:\ProgramData\scoop\apps\winsw\current\winsw.exe;
             };
             Break
         }
@@ -23,17 +30,17 @@ function link_winsw {
 switch ($action) {
     "up" {
         link_winsw link;
-        sudo .\winsw.exe install;
-        sudo .\winsw.exe start;
+        .\winsw.exe install;
+        .\winsw.exe start;
         Break
     }
     "stop" {
-        sudo .\winsw.exe stop;
+        .\winsw.exe stop;
         Break
     }
     "down" {
-        sudo .\winsw.exe stop;
-        sudo .\winsw.exe uninstall;
+        .\winsw.exe stop;
+        .\winsw.exe uninstall;
         link_winsw unlink;
         Break
     }
