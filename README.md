@@ -21,6 +21,8 @@ sudo scoop install winsw.net2 --global
 ## winsw-service
 
 ```powershell
+# scoop cache rm winsw-service
+# sudo scoop uninstall winsw-service --global
 sudo scoop install winsw-service --global
 cd foo/bar
 winsw-service <up|down|stop>
