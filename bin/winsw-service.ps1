@@ -1,13 +1,13 @@
 #Requires -RunAsAdministrator
 
+param (
+    [string]$action
+)
+
 if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
     Write-Error "This script must be executed as Administrator.";
     exit 1;
 }
-
-param (
-    [string]$action
-)
 
 function link_winsw {
     param ($action)
