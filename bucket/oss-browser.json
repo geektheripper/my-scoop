@@ -1,0 +1,37 @@
+{
+    "homepage": "https://github.com/aliyun/oss-browser",
+    "version": "1.9.3",
+    "license": "Apache-2.0",
+    "description": "ossbrowser is a graphical management tool developed by Alibaba Cloud. It provides features similar to those of Windows Explorer. Using ossbrowser, you can view, upload, download, and manage objects with ease.",
+    "architecture": {
+        "64bit": {
+            "url": "https://oss-attachment.cn-hangzhou.oss.aliyun-inc.com/oss-browser/1.9.3/oss-browser-win32-x64.zip",
+            "hash": "sha1:940ed3ddc056b4015421f35402fadf014f5ab700",
+            "extract_dir": "oss-browser-win32-x64"
+        },
+        "32bit": {
+            "url": "https://oss-attachment.cn-hangzhou.oss.aliyun-inc.com/oss-browser/1.9.3/oss-browser-win32-ia32.zip",
+            "hash": "sha1:ed98a2ad2cf6670d54d92a91b4c02f3de4382bdb",
+            "extract_dir": "oss-browser-win32-ia32"
+        }
+    },
+    "shortcuts": [
+        [
+            "oss-browser.exe",
+            "OSS Browser"
+        ]
+    ],
+    "checkver": "|([\\d\\.]+)|",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://oss-attachment.cn-hangzhou.oss.aliyun-inc.com/oss-browser/$version/oss-browser-win32-x64.zip",
+                "extract_dir": "oss-browser-win32-x64"
+            },
+            "32bit": {
+                "url": "https://oss-attachment.cn-hangzhou.oss.aliyun-inc.com/oss-browser/$version/oss-browser-win32-ia32.zip",
+                "extract_dir": "oss-browser-win32-ia32"
+            }
+        }
+    }
+}

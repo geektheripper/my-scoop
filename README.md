@@ -33,3 +33,16 @@ winsw-service <up|down|stop>
 ```powershell
 sudo scoop install npc --global
 ```
+
+## sublime-text-2
+
+```powershell
+scoop install sublime-text-2
+subl xxx.txt
+```
+
+## oss-browser
+
+```powershell
+scoop install oss-browser
+```
