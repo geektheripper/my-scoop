@@ -1,0 +1,51 @@
+{
+    "homepage": "https://github.com/vmware/govmomi",
+    "version": "v0.20.0",
+    "license": "Apache-2.0",
+    "description": "A Go library for interacting with VMware vSphere APIs (ESXi and/or vCenter).",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/vmware/govmomi/releases/download/v0.20.0/govc_windows_amd64.exe.zip",
+            "hash": "sha1:2d87d1a93c6e606bf20521fe04e3826f0bda850d",
+            "bin": [
+                [
+                    "govc_windows_amd64.exe",
+                    "govc"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://github.com/vmware/govmomi/releases/download/v0.20.0/govc_windows_386.exe.zip",
+            "hash": "sha1:545cb9be92e85590a44eb91d688d680a185ffcd3",
+            "bin": [
+                [
+                    "govc_windows_386.exe",
+                    "govc"
+                ]
+            ]
+        }
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/vmware/govmomi/releases/download/v$version/govc_windows_amd64.exe.zip",
+                "bin": [
+                    [
+                        "govc_windows_amd64.exe",
+                        "govc"
+                    ]
+                ]
+            },
+            "32bit": {
+                "url": "https://github.com/vmware/govmomi/releases/download/v$version/govc_windows_386.exe.zip",
+                "bin": [
+                    [
+                        "govc_windows_386.exe",
+                        "govc"
+                    ]
+                ]
+            }
+        }
+    }
+}

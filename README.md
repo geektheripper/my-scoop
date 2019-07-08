@@ -46,3 +46,9 @@ subl xxx.txt
 ```powershell
 scoop install oss-browser
 ```
+
+## govc
+
+```powershell
+scoop install govc
+```
