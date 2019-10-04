@@ -1,0 +1,14 @@
+{
+    "description": "APNG Assembler GUI Version.",
+    "homepage": "https://sourceforge.net/projects/apngasm/",
+    "version": "2.91",
+    "license": "unknow",
+    "url": "https://jaist.dl.sourceforge.net/project/apngasm/2.91/apngasm_gui-2.91-bin-win32.zip",
+    "hash": "7d2047d3334fedf2939b01deb5ff5ef551b4ac67c925e185561a618356a99bba",
+    "shortcuts": [
+        [
+            "apngasm_gui.exe",
+            "Apngasm GUI"
+        ]
+    ]
+}

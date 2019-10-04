@@ -64,3 +64,38 @@ QQ 绿化版
 ```powershell
 scoop install qq
 ```
+
+## apngasm-gui
+
+```powershell
+scoop install govc
+```
+
+## audio-router
+
+```powershell
+scoop install audio-router
+```
+
+## waifu2x-caffe
+
+```powershell
+scoop install waifu2x-caffe
+
+waifu2x --help
+waifu2x --process gpu --mode noise_scale --noise_level 1 --scale_ratio 2 --input_path "R:\60095408_p0.jpg" --output_path "R:\60095408_p0_2x.png"
+```
+
+## keycastow
+
+[Warning] KeyCastOW does not officially release binary file. The file provided by this project are compiled by the community. I can't remember where I got it. Now this exe file is in my Alibaba Cloud OSS storage. So if I forget to pay, you may not be able to download it.
+
+KeyCastOW 官方只有源码，这个项目提供的 exe 文件忘记搁哪儿下的了。
+文件存在阿里云OSS，下不了可能是因为我忘了续费。
+
+```powershell
+scoop install keycastow
+
+# This will install my personal configuration for KeyCastOW
+scoop install keycastow-geektr-preset
+```

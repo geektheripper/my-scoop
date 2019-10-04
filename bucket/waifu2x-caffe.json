@@ -1,0 +1,26 @@
+{
+    "homepage": "https://github.com/lltcggie/waifu2x-caffe",
+    "version": "1.2.0.2",
+    "license": "MIT",
+    "description": "Waifu2x Caffe For Windows.",
+    "url": "https://github.com/lltcggie/waifu2x-caffe/releases/download/1.2.0.2/waifu2x-caffe.zip",
+    "hash": "sha1:f1f5dd9ff2d59dd68eebf91d271a80eb9967e93a",
+    "extract_dir": "waifu2x-caffe",
+    "shortcuts": [
+        [
+            "waifu2x-caffe.exe",
+            "Waifu2x Caffe"
+        ]
+    ],
+    "bin": [
+        [
+            "waifu2x-caffe-cui.exe",
+            "waifu2x"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/lltcggie/waifu2x-caffe/releases/download/$version/waifu2x-caffe.zip",
+        "extract_dir": "waifu2x-caffe"
+    }
+}
