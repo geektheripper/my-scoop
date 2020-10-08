@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/geektheripper/my-scoop",
-    "version": "9.1.5.25530",
+    "version": "9.3.7.27301",
     "license": "Tencent",
     "description": "QQ",
-    "url": "http://flint.geektr.co/scoop/qq/9.1.5.25530.zip",
-    "hash": "sha1:4e3aee214a9a9df161e610be549dd3dd2207cebd",
+    "url": "http://flint.geektr.co/scoop/qq/9.3.7.27301.zip",
+    "hash": "sha1:74cc72fe9e3fd35c20a626c1643ab84564f1eeeb",
     "shortcuts": [
         [
             "Bin\\QQ.exe",
