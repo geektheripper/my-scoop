@@ -13,7 +13,7 @@
     ],
     "depends": [
         "sudo",
-        "vcredist2017"
+        "vcredist2010"
     ],
     "installer": {
         "script": [
@@ -24,7 +24,8 @@
     "uninstaller": {
         "script": [
             "cd $dir",
-            "sudo .\\uninstall.ps1"
+            "sudo .\\uninstall.ps1",
+            "cd $scoopdir"
         ]
     }
 }
