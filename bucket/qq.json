@@ -4,7 +4,7 @@
     "license": "Tencent",
     "description": "QQ",
     "url": "http://flint.geektr.co/scoop/qq/9.3.7.27301.zip",
-    "hash": "sha1:d26132f3dd2a4f925dfe232ef5e7c51bb81e4067",
+    "hash": "sha1:89ab4b6990ccc64eeedb503494639cb6ca378811",
     "shortcuts": [
         [
             "Bin\\QQ.exe",
