@@ -3,7 +3,7 @@
     "version": "2.0.0.8",
     "license": "GPL-3.0",
     "description": "keystroke visualizer for Windows, lets you easily display your keystrokes while recording screencasts.",
-    "url": "https://flint.geektr.co/applications/keycastow/windows/keycastow.exe",
+    "url": "https://flint.geektr.co/scoop/keycastow/keycastow.exe",
     "hash": "sha1:0f0f025d979c8671b5b1117346b6d31ed6070652",
     "shortcuts": [
         [
