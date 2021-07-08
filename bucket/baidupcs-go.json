@@ -1,0 +1,38 @@
+{
+  "homepage": "https://github.com/qjfoidnh/BaiduPCS-Go",
+  "description": "Baidu PCS CLI client written in golang.",
+  "version": "3.8.1",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/v3.8.1/BaiduPCS-Go-v3.8.1-windows-x64.zip",
+      "hash": "sha1:b61f769bcab5ec93f2a99c8e12729ff1d563800c",
+      "installer": {
+        "script": "Move-Item -Path \"$dir\\BaiduPCS-Go-v$version-windows-x64\\BaiduPCS-Go.exe\" -Destination \"$dir\\BaiduPCS-Go.exe\""
+      }
+    },
+    "32bit": {
+      "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/v3.8.1/BaiduPCS-Go-v3.8.1-windows-x86.zip",
+      "hash": "sha1:d7726e56d4457ab43ec6612b31ef372e769cb158",
+      "installer": {
+        "script": "Move-Item -Path \"$dir\\BaiduPCS-Go-v$version-windows-x86\\BaiduPCS-Go.exe\" -Destination \"$dir\\BaiduPCS-Go.exe\""
+      }
+    }
+  },
+  "bin": [
+    [
+      "BaiduPCS-Go.exe",
+      "bdpcs"
+    ]
+  ],
+  "checkver": "github",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/v$version/BaiduPCS-Go-v$version-windows-x64.zip"
+      },
+      "32bit": {
+        "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/v$version/BaiduPCS-Go-v$version-windows-x86.zip"
+      }
+    }
+  }
+}
